@@ -127,8 +127,8 @@ form.addEventListener('submit', function(event) {
   var teste = fetch('https://parseapi.back4app.com/classes/Person', {
       method: 'GET',
     headers: {
-      'X-Parse-Application-Id': 'YX1d8JAZy0FLhG22LfaS7gpibFwDOxTgAlpZcM2J',
-      'X-Parse-REST-API-Key': 'EXeHValff9JzcDdNNqE0ToicNT11fccveKXF4bOW',
+      'X-Parse-Application-Id': 'EPNZxMljhBADfJGjCjGs61CKJ2AAz0uFE5lq828e',
+      'X-Parse-REST-API-Key': 'j8Gknt8SqbyXAOtcd7Qd13dvTROT12BOz3ybzg1F',
       'Content-Type': 'application/json'
     }
   })  
@@ -149,8 +149,8 @@ form.addEventListener('submit', function(event) {
         fetch('https://parseapi.back4app.com/classes/Person', {
           method: 'POST',
         headers: {
-          'X-Parse-Application-Id': 'YX1d8JAZy0FLhG22LfaS7gpibFwDOxTgAlpZcM2J',
-          'X-Parse-REST-API-Key': 'EXeHValff9JzcDdNNqE0ToicNT11fccveKXF4bOW',
+          'X-Parse-Application-Id': 'EPNZxMljhBADfJGjCjGs61CKJ2AAz0uFE5lq828e',
+          'X-Parse-REST-API-Key': 'j8Gknt8SqbyXAOtcd7Qd13dvTROT12BOz3ybzg1F',
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(Object.fromEntries(formData))
@@ -159,8 +159,8 @@ form.addEventListener('submit', function(event) {
       .then(fetch('https://parseapi.back4app.com/classes/Person', {
         method: 'GET',
       headers: {
-        'X-Parse-Application-Id': 'YX1d8JAZy0FLhG22LfaS7gpibFwDOxTgAlpZcM2J',
-        'X-Parse-REST-API-Key': 'EXeHValff9JzcDdNNqE0ToicNT11fccveKXF4bOW',
+        'X-Parse-Application-Id': 'EPNZxMljhBADfJGjCjGs61CKJ2AAz0uFE5lq828e',
+        'X-Parse-REST-API-Key': 'j8Gknt8SqbyXAOtcd7Qd13dvTROT12BOz3ybzg1F',
         'Content-Type': 'application/json'
       }
     })  
