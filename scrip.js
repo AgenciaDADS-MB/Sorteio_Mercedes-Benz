@@ -124,7 +124,7 @@ form.addEventListener('submit', function(event) {
   let formDetail = Object.fromEntries(formData)
   let email = formDetail.email
   // Enviar os dados para o back4app usando uma solicitação HTTP POST
-  var teste = fetch('https://parseapi.back4app.com/classes/Person', {
+  var teste = fetch('https://parseapi.back4app.com/classes/Sorteio', {
       method: 'GET',
     headers: {
       'X-Parse-Application-Id': 'EPNZxMljhBADfJGjCjGs61CKJ2AAz0uFE5lq828e',
@@ -146,7 +146,7 @@ form.addEventListener('submit', function(event) {
         }
       })
       if(existe == false || resultadoArr.length == 0){
-        fetch('https://parseapi.back4app.com/classes/Person', {
+        fetch('https://parseapi.back4app.com/classes/Sorteio', {
           method: 'POST',
         headers: {
           'X-Parse-Application-Id': 'EPNZxMljhBADfJGjCjGs61CKJ2AAz0uFE5lq828e',
@@ -156,7 +156,7 @@ form.addEventListener('submit', function(event) {
         body: JSON.stringify(Object.fromEntries(formData))
       })  
       .then(resposta => resposta.text())
-      .then(fetch('https://parseapi.back4app.com/classes/Person', {
+      .then(fetch('https://parseapi.back4app.com/classes/Sorteio', {
         method: 'GET',
       headers: {
         'X-Parse-Application-Id': 'EPNZxMljhBADfJGjCjGs61CKJ2AAz0uFE5lq828e',
@@ -199,7 +199,7 @@ btnSubmit.addEventListener('click', function() {
   }, 500);
   document.getElementById("btn-submit").addEventListener("click", function(event){
   event.target.disabled = true;
-    Parse.Cloud.run('Person', {}).then(response => {
+    Parse.Cloud.run('Sorteio', {}).then(response => {
   const randomNumber = response.number;
   
   // Exiba o número gerado na tela para o cliente
